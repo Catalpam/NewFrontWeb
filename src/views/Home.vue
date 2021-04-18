@@ -1,18 +1,26 @@
 <template>
+  <ebutton />
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <HelloWorld msg="Welcome to My Site" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from "@/components/HelloWorld.vue";
+import ebutton from "@/components/button.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    ebutton,
+  },
+  methods: {
+    prin() {
+      this.$console.log("gdfgdsfgdfsgdfshjggjhdfs")
+    }
+  },
+};
 </script>
